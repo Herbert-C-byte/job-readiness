@@ -1,4 +1,5 @@
 import type { QuestionCardProps } from "../types/index"
+import Button from "./Button";
 
 export default function QuestionCard({question, options, onAnswer}: QuestionCardProps) {
   return(
@@ -7,16 +8,23 @@ export default function QuestionCard({question, options, onAnswer}: QuestionCard
         <h2 className="text-xl font-bold mb-4">{question}</h2>
         <div className="flex gap-4">
           {options.map((option) => (
-            <button
-              key={option} 
+            <Button 
+              key={option}
               onClick={() => onAnswer(option)}
-              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
             >
               {option}
-            </button>
+            </Button>
           ))}
         </div>
       </div>
     </>
   );
 }
+
+            // <button
+            //   key={option} 
+            //   onClick={() => onAnswer(option)}
+            //   className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+            // >
+            //   {option}
+            // </button>
