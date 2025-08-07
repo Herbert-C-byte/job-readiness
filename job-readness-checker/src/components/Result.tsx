@@ -1,6 +1,4 @@
-type ResultProps = {
-    answers: string[]
-}
+import type { ResultProps } from "../types/index"
 
 export default function Result({ answers }: ResultProps ) {
     const score = answers.filter((answer) => answer === "sim").length

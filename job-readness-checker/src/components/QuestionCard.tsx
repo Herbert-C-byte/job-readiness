@@ -1,8 +1,4 @@
-type QuestionCardProps = {
-  question: string,
-  options: string[],
-  onAnswer: (answer: string) => void
-}
+import type { QuestionCardProps } from "../types/index"
 
 export default function QuestionCard({question, options, onAnswer}: QuestionCardProps) {
   return(
