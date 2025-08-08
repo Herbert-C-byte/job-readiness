@@ -3,6 +3,7 @@ import Layout from "./components/Layout";
 import QuestionCard from "./components/QuestionCard";
 import Result from "./components/Result";
 import Footer from "./components/Footer";
+import Hero from "./components/Hero"
 import "./App.css";
 import Header from "./Header";
 import questionaire from "./lib/questionaire";
@@ -20,6 +21,7 @@ function App() {
     <>
       <Layout>
         <Header />
+        <Hero />
         <main className="flex flex-grow px-4 py-6 max-w-4xl mx-auto w-full">
           {question < questionaire.length ? (
             <QuestionCard
