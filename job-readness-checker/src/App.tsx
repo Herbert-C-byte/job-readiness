@@ -21,18 +21,20 @@ function App() {
     <>
       <Layout>
         <Header />
-        <Hero />
-        <main className="flex flex-grow px-4 py-6 max-w-4xl mx-auto w-full">
-          {question < questionaire.length ? (
-            <QuestionCard
-              question={questionaire[question].question}
-              options={questionaire[question].options}
-              onAnswer={handleAnswer}
-            />
-          ) : (
-            <Result answers={answers} />
-          )}
-        </main>
+        <div className="flex flex-col md:flex-row justify-between items-center px-4 gap-4">
+          <Hero />
+          <main className="flex flex-grow px-4 py-6 max-w-4xl mx-auto w-full">
+            {question < questionaire.length ? (
+              <QuestionCard
+                question={questionaire[question].question}
+                options={questionaire[question].options}
+                onAnswer={handleAnswer}
+              />
+            ) : (
+              <Result answers={answers} />
+            )}
+          </main>
+        </div>
         <Footer />
       </Layout>
     </>

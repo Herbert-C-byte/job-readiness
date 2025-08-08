@@ -31,7 +31,7 @@ export default function Result({ answers }: ResultProps) {
           <ul>
             {answers.map((answer, index) => (
               <li key={index}>
-                <strong>{questionaire[index].question}</strong>: {answer}
+                <strong>{questionaire[index].question}</strong> : {answer}
               </li>
             ))}
           </ul>
