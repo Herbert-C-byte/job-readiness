@@ -8,4 +8,11 @@ type ResultProps = {
     answers: string[]
 }
 
-export type { QuestionCardProps, ResultProps }
+type ButtonProps = {
+  onClick: () => void;
+  disabled?: boolean;
+  className?: string;
+  type?: "button" | "reset" | "submit";
+}
+
+export type { QuestionCardProps, ResultProps, ButtonProps }
