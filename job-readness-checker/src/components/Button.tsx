@@ -9,7 +9,7 @@ export default function Button({
   className = "",
 }: PropsWithChildren<ButtonProps>) {
   const buttonStyle =
-    "w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-blue-700 transition-colors duration-200 transition-transform duration-150 ease-in-out active:scale-95";
+    "w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-blue-700 active:bg-red-500 transition-colors duration-200 transition-transform duration-150 ease-in-out active:scale-95";
 
   return (
     <button
