@@ -1,13 +1,13 @@
 import { useState } from "react";
+import Layout from "./components/Layout";
 import QuestionCard from "./components/QuestionCard";
 import Result from "./components/Result";
 import Footer from "./components/Footer";
 import "./App.css";
 import Header from "./Header";
-import questionaire from "./lib/questionaire"
+import questionaire from "./lib/questionaire";
 
 function App() {
-
   const [question, setQuestion] = useState(0);
   const [answers, setAnswers] = useState<string[]>([]);
 
@@ -18,9 +18,9 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col min-h-screen">
+      <Layout>
         <Header />
-        <div className="flex-grow max-w-xl mx-auto mt-10 overflow-auto">
+        <main className="flex flex-grow">
           {question < questionaire.length ? (
             <QuestionCard
               question={questionaire[question].question}
@@ -30,9 +30,9 @@ function App() {
           ) : (
             <Result answers={answers} />
           )}
-        </div>
+        </main>
         <Footer />
-      </div>
+      </Layout>
     </>
   );
 }
