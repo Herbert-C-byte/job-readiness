@@ -1,5 +1,6 @@
 import type { ResultProps } from "../types/index";
 import Card from "./Card";
+import questionaire from "../lib/questionaire"
 
 export default function Result({ answers }: ResultProps) {
   const score = answers.filter((answer) => answer === "sim").length;
@@ -26,6 +27,14 @@ export default function Result({ answers }: ResultProps) {
       <div className="p-6 max-w-2xl mx-auto">
         <Card className="text-center">
           <h2 className="text-2xl font-bold mb-4">O seu Resultado</h2>
+          <h3 >Respostas selecionadas:</h3>
+          <ul>
+            {answers.map((answer, index) => (
+              <li key={index}>
+                <strong>{questionaire[index].question}</strong>: {answer}
+              </li>
+            ))}
+          </ul>
           <p className="text-lg mb-2">
             Pontuação: {score} de {answers.length}
           </p>
