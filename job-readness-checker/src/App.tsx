@@ -20,7 +20,7 @@ function App() {
     <>
       <Layout>
         <Header />
-        <main className="flex flex-grow">
+        <main className="flex flex-grow px-4 py-6 max-w-4xl mx-auto w-full">
           {question < questionaire.length ? (
             <QuestionCard
               question={questionaire[question].question}

@@ -21,6 +21,7 @@ export default function QuestionCard({question, options, onAnswer}: QuestionCard
   );
 }
 
+            // First option, if I mess up.
             // <button
             //   key={option} 
             //   onClick={() => onAnswer(option)}
