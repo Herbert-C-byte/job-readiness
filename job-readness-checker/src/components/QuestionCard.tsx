@@ -1,10 +1,11 @@
 import type { QuestionCardProps } from "../types/index"
 import Button from "./Button";
+import Card from "./Card"
 
 export default function QuestionCard({question, options, onAnswer}: QuestionCardProps) {
   return(
     <>
-      <div className="bg-gray-50 rounded-xl shadow-md p-6  max-w-2xl mx-auto border border-gray-200">
+      <Card className="max-w-2xl mx-auto">
         <h2 className="text-xl font-bold mb-4">{question}</h2>
         <div className="grid grid-cols-1 mt-6 sm:grid-cols-2 gap-4">
           {options.map((option) => (
@@ -16,7 +17,7 @@ export default function QuestionCard({question, options, onAnswer}: QuestionCard
             </Button>
           ))}
         </div>
-      </div>
+      </Card>
     </>
   );
 }

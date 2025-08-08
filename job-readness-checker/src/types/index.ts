@@ -1,3 +1,7 @@
+type CardProps = {
+  className?: string;
+}
+
 type QuestionCardProps = {
   question: string,
   options: string[],
@@ -15,4 +19,5 @@ type ButtonProps = {
   type?: "button" | "reset" | "submit";
 }
 
-export type { QuestionCardProps, ResultProps, ButtonProps }
+
+export type { CardProps, QuestionCardProps, ResultProps, ButtonProps }

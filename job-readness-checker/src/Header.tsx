@@ -8,7 +8,7 @@ export default function Header() {
           <div className="flex items-center gap-2">
             <img src={Logo} className="w-24 sm:w-26" alt="logo" />
           </div>
-          <p className="text-white">Deixe-nos ajuda-lo na sua busca profissional</p>
+          <p className="text-white text-lg">Deixe-nos ajuda-lo na sua busca profissional😉👍</p>
         </div>
       </header>
     </>
