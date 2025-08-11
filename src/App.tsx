@@ -4,7 +4,6 @@ import QuestionCard from "./components/QuestionCard";
 import Result from "./components/Result";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero"
-import "./App.css";
 import Header from "./Header";
 import questionaire from "./lib/questionaire";
 

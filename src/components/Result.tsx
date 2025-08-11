@@ -35,7 +35,7 @@ export default function Result({ answers }: ResultProps) {
               </li>
             ))}
           </ul>
-          <p className="text-lg mb-2">
+          <p className="text-lg my-2">
             Pontuação: {score} de {answers.length}
           </p>
           <p className="text-md text-gray-700">{feedback}</p>
