@@ -7,7 +7,7 @@ export default function Result({ answers }: ResultProps) {
 
   let feedback: string;
   if (score <= 2) {
-    feedback = "Assim não vai dar boss😂";
+    feedback = "O seu perfil profissional ainda precisa de muito desenvolvimento.";
   } else if (score <= 4) {
     feedback =
       "Você está no caminho, mas ainda precisa fortalecer seus conhecimentos antes de se considerar pronto.";
