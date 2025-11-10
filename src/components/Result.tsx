@@ -7,10 +7,10 @@ export default function Result({ answers }: ResultProps) {
 
   let feedback: string;
   if (score <= 2) {
-    feedback = "O seu perfil profissional ainda precisa de muito desenvolvimento.";
+    feedback = "O seu perfil profissional ainda precisa de muito desenvolvimento, a sério.";
   } else if (score <= 4) {
     feedback =
-      "Você está no caminho, mas ainda precisa fortalecer seus conhecimentos antes de se considerar pronto.";
+      "Você está no caminho, mas ainda precisa fortalecer seus conhecimentos antes de se considerar pronto para uma vaga.";
   } else if (score <= 6) {
     feedback =
       "Bom progresso. Continue revisando e praticando para consolidar seus aprendizados.";
@@ -27,7 +27,7 @@ export default function Result({ answers }: ResultProps) {
       <div className="p-6 max-w-2xl mx-auto">
         <Card className="text-center">
           <h2 className="text-2xl font-bold mb-4">O seu Resultado</h2>
-          <h3 >Respostas selecionadas:</h3>
+          <h3 >Respostas selecionadas pelo usuário:</h3>
           <ul>
             {answers.map((answer, index) => (
               <li key={index}>
