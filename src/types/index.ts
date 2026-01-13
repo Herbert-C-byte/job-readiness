@@ -19,5 +19,10 @@ type ButtonProps = {
   type?: "button" | "reset" | "submit";
 }
 
+type ProgressIndicatorProps = {
+  current: number;
+  total: number;
+}
 
-export type { CardProps, QuestionCardProps, ResultProps, ButtonProps }
+
+export type { CardProps, QuestionCardProps, ResultProps, ButtonProps, ProgressIndicatorProps }
